@@ -46,7 +46,7 @@ class PersonTrackerCard extends LitElement {
 
   static getStubConfig() {
     return {
-      entity: '',
+      entity: 'person',  // Metti solo il dominio, l'editor lo gestirà
       type: 'custom:person-tracker-card'
     };
   }
@@ -291,16 +291,7 @@ class PersonTrackerCard extends LitElement {
 
     const entity = this.hass.states[this.config.entity];
 
-    if (!this.config.entity) {
-      return html`
-        <ha-card>
-          <div class="warning">
-            <ha-icon icon="mdi:account-question"></ha-icon>
-            <span>Seleziona un'entità person dalla configurazione</span>
-          </div>
-        </ha-card>
-      `;
-    }
+
 
     const stateConfig = this._getCurrentStateConfig();
     const stateName = stateConfig?.name || this.config.name || entity.state;
