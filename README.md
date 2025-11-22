@@ -73,14 +73,6 @@ show_distance: true
 show_travel_time: true
 show_connection: true
 ```
-# 👤 Person Tracker Card per Home Assistant
-
-[![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/custom-components/hacs)
-
-
-Card avanzata per Home Assistant che mostra informazioni dettagliate sulle persone con editor visuale completo.
-
-![Person Tracker Card](images/preview.png)
 
 ## ✨ Caratteristiche Principali
 
