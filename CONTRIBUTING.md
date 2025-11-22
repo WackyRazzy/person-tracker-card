@@ -1,192 +1,192 @@
-# Contribuire a Person Tracker Card
+# Contributing to Person Tracker Card
 
-Grazie per l'interesse nel contribuire! Ogni contributo è benvenuto.
+Thank you for your interest in contributing! Every contribution is welcome.
 
-## 🎯 Come Contribuire
+## 🎯 How to Contribute
 
-### Segnalare Bug
+### Report Bugs
 
-Se trovi un bug, apri una [Issue](https://github.com/yourusername/person-tracker-card/issues) includendo:
+If you find a bug, open an [Issue](https://github.com/yourusername/person-tracker-card/issues) including:
 
-- **Descrizione chiara** del problema
-- **Passi per riprodurlo**
-- **Comportamento atteso** vs comportamento effettivo
-- **Screenshot** (se applicabile)
-- **Versione** di Home Assistant e della card
-- **Configurazione** (YAML anonimizzato)
-- **Log della console** (F12 in browser)
+- **Clear description** of the problem
+- **Steps to reproduce**
+- **Expected behavior** vs actual behavior
+- **Screenshot** (if applicable)
+- **Version** of Home Assistant and the card
+- **Configuration** (anonymized YAML)
+- **Console logs** (F12 in the browser)
 
-### Suggerire Funzionalità
+### Suggest Features
 
-Per nuove funzionalità, apri una Issue con:
+For new features, open an Issue with:
 
-- **Descrizione dettagliata** della funzionalità
-- **Casi d'uso** concreti
-- **Mock-up o sketch** (opzionale ma apprezzato)
-- **Benefici** per gli utenti
+- **Detailed description** of the feature
+- **Concrete use cases**
+- **Mock-up or sketch** (optional but appreciated)
+- **Benefits** for users
 
-### Contribuire Codice
+### Contribute Code
 
-1. **Fork** il repository
-2. **Crea un branch** per la tua feature:
+1. **Fork** the repository
+2. **Create a branch** for your feature:
    ```bash
    git checkout -b feature/AmazingFeature
    ```
-3. **Sviluppa** la tua funzionalità
-4. **Testa** accuratamente
-5. **Committa** con messaggi chiari:
+3. **Develop** your feature
+4. **Test** thoroughly
+5. **Commit** with clear messages:
    ```bash
-   git commit -m '✨ Add: Nuova funzionalità amazing'
+   git commit -m '✨ Add: New amazing feature'
    ```
-6. **Push** al tuo fork:
+6. **Push** to your fork:
    ```bash
    git push origin feature/AmazingFeature
    ```
-7. **Apri una Pull Request**
+7. **Open a Pull Request**
 
-## 📝 Linee Guida Codice
+## 📝 Code Guidelines
 
-### Stile JavaScript
+### JavaScript Style
 
-- Usa **ES6+** quando possibile
-- **Indentazione** con 2 spazi
-- **Nomi variabili** descrittivi in camelCase
-- **Commenti** per logica complessa
-- **JSDoc** per funzioni pubbliche
+- Use **ES6+** when possible
+- **Indentation** with 2 spaces
+- **Descriptive variable names** in camelCase
+- **Comments** for complex logic
+- **JSDoc** for public functions
 
-Esempio:
+Example:
 ```javascript
 /**
- * Calcola la distanza tra due punti
- * @param {number} lat1 - Latitudine punto 1
- * @param {number} lon1 - Longitudine punto 1
- * @param {number} lat2 - Latitudine punto 2
- * @param {number} lon2 - Longitudine punto 2
- * @returns {number} Distanza in km
+ * Calculates the distance between two points
+ * @param {number} lat1 - Latitude point 1
+ * @param {number} lon1 - Longitude point 1
+ * @param {number} lat2 - Latitude point 2
+ * @param {number} lon2 - Longitude point 2
+ * @returns {number} Distance in km
  */
-_calculateDistance(lat1, lon1, lat2, lon2) {
-  // Implementazione...
-}
+ _calculateDistance(lat1, lon1, lat2, lon2) {
+  // Implementation...
+ }
 ```
 
-### Convenzioni Commit
+### Commit Conventions
 
-Usa [Conventional Commits](https://www.conventionalcommits.org/):
+Use [Conventional Commits](https://www.conventionalcommits.org/):
 
-- `✨ feat:` Nuova funzionalità
-- `🐛 fix:` Correzione bug
-- `📝 docs:` Documentazione
-- `🎨 style:` Formattazione, punto e virgola mancanti, etc
-- `♻️ refactor:` Refactoring codice
-- `⚡ perf:` Miglioramento performance
-- `✅ test:` Aggiunta test
-- `🔧 chore:` Manutenzione, dipendenze
+- `✨ feat:` New feature
+- `🐛 fix:` Bug fix
+- `📝 docs:` Documentation
+- `🎨 style:` Formatting, missing semicolons, etc.
+- `♻️ refactor:` Code refactor
+- `⚡ perf:` Performance improvement
+- `✅ test:` Adding tests
+- `🔧 chore:` Maintenance, dependencies
 
-Esempi:
+Examples:
 ```
-✨ feat: Aggiungi supporto per immagini GIF animate
-🐛 fix: Correggi posizionamento elementi sovrapposti
-📝 docs: Aggiorna README con nuovi esempi
-♻️ refactor: Semplifica logica rendering stati
+✨ feat: Add support for animated GIF images
+🐛 fix: Correct positioning of overlapping elements
+📝 docs: Update README with new examples
+♻️ refactor: Simplify state rendering logic
 ```
 
 ### CSS
 
-- Usa **CSS custom properties** per temi
+- Use **CSS custom properties** for themes
 - **Mobile-first** approach
-- **BEM-like** naming quando appropriato
-- Mantieni **specificità bassa**
+- **BEM-like** naming when appropriate
+- Keep **specificity low**
 
 ### Testing
 
-Prima di inviare una PR:
+Before submitting a PR:
 
-1. Testa su **Home Assistant recente**
-2. Verifica su **diversi browser** (Chrome, Firefox, Safari)
-3. Testa su **dispositivi mobile**
-4. Controlla **console per errori**
-5. Verifica **temi chiari e scuri**
+1. Test on **recent Home Assistant**
+2. Check on **multiple browsers** (Chrome, Firefox, Safari)
+3. Test on **mobile devices**
+4. Check the **console for errors**
+5. Verify **light and dark themes**
 
-## 🏗️ Struttura Progetto
+## 🏗️ Project Structure
 
 ```
 person-tracker-card/
-├── dist/                          # File distribuiti
-│   ├── person-tracker-card.js     # Card principale
+├── dist/                          # Distributed files
+│   ├── person-tracker-card.js     # Main card
 │   └── person-tracker-card-editor.js  # Editor
-├── images/                        # Screenshot e demo
+├── images/                        # Screenshots and demos
 │   ├── preview.png
 │   ├── editor-*.png
 │   └── state-*.png
 ├── .gitignore
-├── CHANGELOG.md                   # Storico modifiche
-├── CONTRIBUTING.md                # Questa guida
-├── hacs.json                      # Config HACS
-├── info.md                        # Info breve HACS
+├── CHANGELOG.md                   # Change log
+├── CONTRIBUTING.md                # This guide
+├── hacs.json                      # HACS config
+├── info.md                        # Short HACS info
 ├── LICENSE
-└── README.md                      # Documentazione
+└── README.md                      # Documentation
 ```
 
-## 🔍 Processo Review
+## 🔍 Review Process
 
-Le Pull Request verranno revisionate per:
+Pull Requests will be reviewed for:
 
-1. **Funzionalità** - Fa quello che promette?
-2. **Qualità codice** - È leggibile e manutenibile?
-3. **Performance** - Introduce lag o problemi?
-4. **Compatibilità** - Funziona su diverse versioni HA?
-5. **Documentazione** - README e commenti aggiornati?
-6. **Breaking changes** - Richiede aggiornamento versione major?
+1. **Functionality** - Does it do what it promises?
+2. **Code quality** - Is it readable and maintainable?
+3. **Performance** - Does it introduce lag or issues?
+4. **Compatibility** - Does it work on different HA versions?
+5. **Documentation** - Are README and comments updated?
+6. **Breaking changes** - Does it require a major version bump?
 
-## 📋 Checklist Pull Request
+## 📋 Pull Request Checklist
 
-Quando apri una PR, assicurati di:
+When opening a PR, make sure to:
 
-- [ ] Testato su Home Assistant recente
-- [ ] Nessun errore in console
-- [ ] Funziona con editor visuale
-- [ ] Funziona con configurazione YAML
-- [ ] Documentazione aggiornata
-- [ ] CHANGELOG.md aggiornato
-- [ ] Screenshot per modifiche UI
-- [ ] Commit messages seguono convenzioni
-- [ ] Nessun file non necessario incluso
+- [ ] Tested on recent Home Assistant
+- [ ] No console errors
+- [ ] Works with the visual editor
+- [ ] Works with YAML configuration
+- [ ] Documentation updated
+- [ ] CHANGELOG.md updated
+- [ ] Screenshots for UI changes
+- [ ] Commit messages follow conventions
+- [ ] No unnecessary files included
 
-## 🎨 Risorse Design
+## 🎨 Design Resources
 
-Per contributi UI/UX:
+For UI/UX contributions:
 
-- Usa i **colori del tema** Home Assistant
-- Segui le **linee guida Material Design**
-- Mantieni **consistenza** con altre card
-- Prioritizza **accessibilità**
+- Use **Home Assistant theme colors**
+- Follow **Material Design guidelines**
+- Maintain **consistency** with other cards
+- Prioritize **accessibility**
 
-## 🐛 Debug
+## 🐛 Debugging
 
-Per debuggare la card:
+To debug the card:
 
-1. Apri DevTools (F12)
-2. Vai su Console
-3. Cerca messaggi della card:
+1. Open DevTools (F12)
+2. Go to Console
+3. Look for card messages:
    ```javascript
    console.log('%c PERSON-TRACKER-CARD', ...)
    ```
-4. Usa `console.log()` liberamente durante sviluppo
-5. Rimuovi log prima del commit finale
+4. Use `console.log()` freely during development
+5. Remove logs before the final commit
 
-## 📞 Comunicazione
+## 📞 Communication
 
-- **Issue** per bug e feature request
-- **Discussions** per domande generali
-- **PR** per contributi codice
-- Sii **rispettoso** e **costruttivo**
+- **Issues** for bugs and feature requests
+- **Discussions** for general questions
+- **PRs** for code contributions
+- Be **respectful** and **constructive**
 
-## 🙏 Riconoscimenti
+## 🙏 Acknowledgments
 
-Tutti i contributori verranno menzionati nel README!
+All contributors will be mentioned in the README!
 
-## ❓ Domande?
+## ❓ Questions?
 
-Se hai domande, apri una Discussion o contatta i maintainer.
+If you have questions, open a Discussion or contact the maintainers.
 
-Grazie per contribuire! 🎉
+Thanks for contributing! 🎉
